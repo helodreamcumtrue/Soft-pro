@@ -39,17 +39,17 @@ const moodboardImages = [
 ];
 
 const teamMembers = [
-  { id: 1, name: 'Leila Bennett', role: 'Frontend Lead', handle: '@leila124', time: '12m ago', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800' },
-  { id: 2, name: 'David Kim', role: 'Backend Dev', handle: '@davidk_dev', time: '1h ago', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=800' },
-  { id: 3, name: 'Sofia Rodriguez', role: 'UI/UX Designer', handle: '@sofia_designs', time: '2h ago', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1bf08c?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=800' },
-  { id: 4, name: 'Marcus Chen', role: 'Project Manager', handle: '@marcus_c', time: '5h ago', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800' },
+  { id: 1, name: 'Arshdeep Kaur', role: 'Frontend Lead', handle: '@arshdeep', time: '12m ago', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800', resumeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1' },
+  { id: 2, name: 'Harshita', role: 'Backend Dev', handle: '@harshita', time: '1h ago', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=800', resumeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1' },
+  { id: 3, name: 'Lakshay', role: 'UI/UX Designer', handle: '@lakshay', time: '2h ago', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1bf08c?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=800', resumeLink: 'https://linktr.ee/lakshay.j' },
+  { id: 4, name: 'Parth', role: 'Project Manager', handle: '@parth', time: '5h ago', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400', bg: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800', resumeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1' },
 ];
 
 const initialTeamTodos = [
-  { id: 1, name: 'Leila Bennett', role: 'Frontend', tasks: [{ id: 't1', text: 'Implement Drag & Drop', done: true }, { id: 't2', text: 'Refine Dashboard UI', done: false }] },
-  { id: 2, name: 'David Kim', role: 'Backend', tasks: [{ id: 't3', text: 'Setup MongoDB Schema', done: true }, { id: 't4', text: 'JWT Auth Endpoints', done: true }] },
-  { id: 3, name: 'Sofia Rodriguez', role: 'Design', tasks: [{ id: 't5', text: 'Finalize Moodboard', done: false }] },
-  { id: 4, name: 'Marcus Chen', role: 'Management', tasks: [{ id: 't6', text: 'Review Sprint 2', done: false }, { id: 't7', text: 'Update Gantt Chart', done: true }] }
+  { id: 1, name: 'Arshdeep Kaur', role: 'Frontend', tasks: [{ id: 't1', text: 'Implement Drag & Drop', done: true }, { id: 't2', text: 'Refine Dashboard UI', done: false }] },
+  { id: 2, name: 'Harshita', role: 'Backend', tasks: [{ id: 't3', text: 'Setup MongoDB Schema', done: true }, { id: 't4', text: 'JWT Auth Endpoints', done: true }] },
+  { id: 3, name: 'Lakshay', role: 'Design', tasks: [{ id: 't5', text: 'Finalize Moodboard', done: false }] },
+  { id: 4, name: 'Parth', role: 'Management', tasks: [{ id: 't6', text: 'Review Sprint 2', done: false }, { id: 't7', text: 'Update Gantt Chart', done: true }] }
 ];
 
 const documentsList = [
@@ -276,7 +276,7 @@ function DashboardView() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="font-semibold text-gray-900 text-[13px]">Leila B.</span>
+                      <span className="font-semibold text-gray-900 text-[13px]">Arshdeep K.</span>
                       <span className="text-[11px] text-gray-400">10m ago</span>
                     </div>
                     <p className="text-[13px] text-gray-600">Pushed commit to <span className="font-medium text-gray-900">main</span></p>
@@ -289,7 +289,7 @@ function DashboardView() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="font-semibold text-gray-900 text-[13px]">David K.</span>
+                      <span className="font-semibold text-gray-900 text-[13px]">Harshita</span>
                       <span className="text-[11px] text-gray-400">2h ago</span>
                     </div>
                     <p className="text-[13px] text-gray-600">Completed task <span className="font-medium text-gray-900">"JWT Auth"</span></p>
@@ -302,7 +302,7 @@ function DashboardView() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="font-semibold text-gray-900 text-[13px]">Marcus C.</span>
+                      <span className="font-semibold text-gray-900 text-[13px]">Parth</span>
                       <span className="text-[11px] text-gray-400">1d ago</span>
                     </div>
                     <p className="text-[13px] text-gray-600">Uploaded <span className="font-medium text-gray-900">Proposal.pdf</span></p>
@@ -461,9 +461,6 @@ function TeamView() {
                 
                 <div className="absolute top-5 left-0 right-0 text-center z-10 px-4">
                   <h3 className="text-white text-lg font-semibold tracking-tight mb-1 truncate">{member.name}</h3>
-                  <div className="flex items-center justify-center gap-1.5 text-white/90 text-[10px] font-medium uppercase tracking-wider">
-                    <Zap size={10} className="animate-pulse text-yellow-300" /> {member.role}
-                  </div>
                 </div>
               </div>
 
@@ -476,9 +473,9 @@ function TeamView() {
                   </div>
                 </div>
                 
-                <button className="bg-black text-white px-3 py-1.5 rounded-lg text-[11px] font-medium hover:bg-gray-800 transition-colors shadow-sm whitespace-nowrap">
+                <a href={member.resumeLink} target="_blank" rel="noopener noreferrer" className="bg-black text-white px-3 py-1.5 rounded-lg text-[11px] font-medium hover:bg-gray-800 transition-colors shadow-sm whitespace-nowrap">
                   View Resume
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
@@ -822,7 +819,7 @@ export default function App() {
                  <img src={teamMembers[0].image} alt="User" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col text-left">
-                <span className="text-[13px] font-semibold text-gray-900 leading-tight tracking-tight">Leila Bennett</span>
+                <span className="text-[13px] font-semibold text-gray-900 leading-tight tracking-tight">Arshdeep Kaur</span>
                 <span className="text-[10px] text-gray-500 font-medium">Admin Account</span>
               </div>
             </div>
